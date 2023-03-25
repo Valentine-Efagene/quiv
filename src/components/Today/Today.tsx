@@ -21,13 +21,14 @@ export default function Today({ className }: ILogoProps) {
 
   useEffect(() => {
     setMinutes((prevState) =>
-      seconds > 59 ? (prevState + 1) % 60 : prevState
+      seconds === 0 ? (prevState + 1) % 60 : prevState
     );
   }, [seconds]);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((prevState) => (prevState + 1) % 60);
+      const date = new Date();
+      setSeconds(date.getSeconds());
 
       return () => {
         clearInterval(interval);

@@ -3,6 +3,7 @@
   font-style: normal;
   display: flex;
   height: 100%;
+  background-color: #000000;
   flex-direction: column;
 
   padding-inline: 1.25rem;
