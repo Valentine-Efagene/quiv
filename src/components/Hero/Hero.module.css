@@ -1,8 +1,9 @@
 .container {
   display: grid;
   grid-template-columns: 6fr 7fr;
-  height: 90vh;
   margin-top: 4rem;
+  height: fit-content;
+  padding-block: 7rem;
 }
 
 .left {
@@ -84,12 +85,13 @@
 .ape1 {
   position: absolute;
   left: 1rem;
+  top: -7rem;
 }
 
 .ape2 {
   position: absolute;
   right: 4rem;
-  bottom: 0rem;
+  bottom: -7rem;
 }
 
 .ape1,
@@ -121,17 +123,17 @@
 
 .info:nth-child(1) {
   right: 0;
-  top: 20%;
+  top: 0;
 }
 
 .info:nth-child(2) {
-  left: 0;
+  left: 7rem;
   top: 60%;
   transform: translate(-50%);
 }
 
 .info:nth-child(3) {
-  bottom: 4rem;
+  bottom: -7rem;
   left: 50%;
   transform: translate(-50%);
 }

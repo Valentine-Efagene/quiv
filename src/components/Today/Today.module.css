@@ -77,10 +77,14 @@
   );
   border: 0.5px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
-  padding: 1.8rem 1.7rem;
-  width: fit-content;
-  display: grid;
-  grid-template-columns: 1fr;
+  /* padding: 1.8rem 1.7rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 5rem;
+  aspect-ratio: 1/1;
 }
 
 .time .card strong,

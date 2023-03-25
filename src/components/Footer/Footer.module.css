@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  border: 1px solid var(--color-secondary);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+.top ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top ul li a {
+  color: #ffffff;
+}
+
+.top h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.conversion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.conversion > form {
+  display: flex;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-flow: row nowrap;
+  min-width: 55%;
+  justify-content: space-between;
+}
+
+.conversion > h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.conversion input[type="email"] {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #00000080;
+  border: none;
+  background-color: #ffffff;
+  padding: 0.7rem 1rem;
+  flex: 1;
+}
+
+.conversion .submit {
+  cursor: pointer;
+  padding-inline: 1rem;
+  color: #292d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 300ms;
+  background-color: #ffffff;
+  width: fit-content;
+}
+
+.conversion .submit:hover {
+  background-color: #cccccc;
+}
+
+.conversion > * {
+  margin-right: auto;
+}
+
+.conversion .socialLinks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.conversion .socialLinks .link {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  color: #ffffff;
+  background-color: #3e67b5;
+  border-radius: 12px;
+}
+.conversion .socialLinks .link .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.top > div {
+  grid-row: 1;
+}
+
+.bottom {
+  border-top: 1px solid var(--color-secondary);
+  padding-block: 2rem;
+  display: flex;
+}
+
+.bottom .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin: auto;
+}
+
+.bottom a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
