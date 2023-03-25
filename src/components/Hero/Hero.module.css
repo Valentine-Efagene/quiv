@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   width: min(100%, 500px);
-  padding-top: 3rem;
 }
 
 .left > *:not(:first-child) {

@@ -30,7 +30,6 @@
 .conversion {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
 }
 
 .conversion > form {
@@ -115,7 +114,7 @@
 
 .bottom .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   gap: 3rem;
   margin: auto;
 }
@@ -125,4 +124,16 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
+  width: fit-content;
+  text-align: center;
+}
+
+.bottom .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom .copyright > .icon {
+  margin-right: 0.5rem;
 }

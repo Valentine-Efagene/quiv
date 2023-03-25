@@ -6,6 +6,7 @@ import {
   FaReddit,
   FaTwitter,
 } from "react-icons/fa";
+import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
@@ -121,7 +122,10 @@ export default function Footer({ className }: IFooterProps) {
       <div className={styles.bottom}>
         <div className={styles.content}>
           <Link to="">Quiv, Inc</Link>
-          <Link to="">C Community guidelines</Link>
+          <Link to="" className={styles.copyright}>
+            <AiOutlineCopyrightCircle className={styles.icon} />{" "}
+            <span>Community guidelines</span>
+          </Link>
           <Link to="">Terms</Link>
           <Link to="">Privacy Policy</Link>
         </div>
