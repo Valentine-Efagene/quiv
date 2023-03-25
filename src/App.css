@@ -2,6 +2,7 @@
   margin: 0 auto;
   min-height: 100vh;
   width: min(1280px, 100%);
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {

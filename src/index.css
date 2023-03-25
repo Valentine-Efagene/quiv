@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   --max-width: 1280px;
+  --color-secondary: #00e6fe;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,6 +15,18 @@
   -webkit-text-size-adjust: 100%;
 
   --oscillation-animation: oscillation 1s ease-in-out;
+}
+
+@keyframes oscillation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.7rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 a {

@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   width: min(100%, 500px);
+  padding-top: 3rem;
 }
 
 .left > *:not(:first-child) {
@@ -44,10 +45,15 @@
   text-align: center;
   color: #ffffff;
 
-  border: 2px solid #00e6fe;
+  border: 2px solid var(--color-secondary);
   border-radius: 2rem;
   padding: 0.7rem 1.5rem;
   white-space: nowrap;
+  transition: all 300ms;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--color-secondary);
 }
 
 .ctaSecondary {
@@ -55,9 +61,18 @@
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: fit-content;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .ctaSecondary .icon {
+  font-size: 1rem;
+}
+
+.ctaSecondary:hover .icon {
   animation: var(--oscillation-animation);
 }
 

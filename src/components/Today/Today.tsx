@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Today.module.css";
 
 interface ILogoProps {
@@ -6,6 +6,35 @@ interface ILogoProps {
 }
 
 export default function Today({ className }: ILogoProps) {
+  const [days, setDays] = useState(2);
+  const [hours, setHours] = useState(16);
+  const [minutes, setMinutes] = useState(40);
+  const [seconds, setSeconds] = useState(32);
+
+  useEffect(() => {
+    setDays((prevState) => (hours > 24 ? prevState + 1 : prevState));
+  }, [hours]);
+
+  useEffect(() => {
+    setHours((prevState) => (minutes > 59 ? (prevState + 1) % 24 : prevState));
+  }, [minutes]);
+
+  useEffect(() => {
+    setMinutes((prevState) =>
+      seconds > 59 ? (prevState + 1) % 60 : prevState
+    );
+  }, [seconds]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds((prevState) => (prevState + 1) % 60);
+
+      return () => {
+        clearInterval(interval);
+      };
+    }, 1000);
+  }, []);
+
   return (
     <div className={`${className} ${styles.container}`}>
       <h2>Today’s Highest Bid</h2>
@@ -19,19 +48,19 @@ export default function Today({ className }: ILogoProps) {
         </div>
         <div className={styles.time}>
           <div className={styles.card}>
-            <strong>2</strong>
+            <strong>{days}</strong>
             <small>Days</small>
           </div>
           <div className={styles.card}>
-            <strong>16</strong>
+            <strong>{hours}</strong>
             <small>Hours</small>
           </div>
           <div className={styles.card}>
-            <strong>40</strong>
+            <strong>{minutes}</strong>
             <small>Minutes</small>
           </div>
           <div className={styles.card}>
-            <strong>32</strong>
+            <strong>{seconds}</strong>
             <small>Seconds</small>
           </div>
         </div>

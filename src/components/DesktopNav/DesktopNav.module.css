@@ -26,8 +26,13 @@
   line-height: 28px;
   color: #ffffff;
 
-  border: 2px solid #00e6fe;
+  border: 2px solid var(--color-secondary);
   border-radius: 2rem;
   padding: 0.7rem 1.5rem;
   white-space: nowrap;
+  transition: all 300ms;
+}
+
+.cta:hover {
+  background-color: var(--color-secondary);
 }
