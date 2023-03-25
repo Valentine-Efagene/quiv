@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+}
+
+.navItems {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.navItem {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.cta {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+
+  border: 2px solid #00e6fe;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  white-space: nowrap;
+}

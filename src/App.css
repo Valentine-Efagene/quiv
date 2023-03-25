@@ -1,0 +1,8 @@
+#root {
+  margin: 0 auto;
+  min-height: 100vh;
+  width: min(1280px, 100%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+}

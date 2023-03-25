@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #000000;
+  padding-top: 1rem;
+}
+
+.container .content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.bid {
+  margin-block: auto;
+}
+
+.bid > .card {
+  background: linear-gradient(
+    93.81deg,
+    rgba(255, 255, 255, 0.225) -2.44%,
+    rgba(255, 255, 255, 0.175) 136.47%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  width: fit-content;
+}
+
+.bid .card > h3 {
+  margin-bottom: auto;
+  font-weight: 600;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  mix-blend-mode: overlay;
+}
+
+.bid .card > span {
+  margin-top: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.bid > .card > img {
+  width: fit-content;
+  grid-row: 1 / span 2;
+  margin: auto;
+}
+
+.time {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+}
+
+.time > .card {
+  background: linear-gradient(
+    93.81deg,
+    rgba(255, 255, 255, 0.225) -2.44%,
+    rgba(255, 255, 255, 0.175) 136.47%
+  );
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  padding: 1.8rem 1.7rem;
+  width: fit-content;
+}
+
+.time .card strong {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.time .card small {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #ffffff;
+}
