@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 import Today from "../../components/Today";
 import Footer from "../../components/Footer";
 import HighestLiveBids from "../../components/HighestLiveBids";
+import Listing from "../../components/Listing";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Today />
       <HighestLiveBids />
+      <Listing />
       <Footer />
     </div>
   );

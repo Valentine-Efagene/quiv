@@ -1,13 +1,45 @@
 .container {
-  margin-top: 3rem;
+  margin-top: 6rem;
+  background: linear-gradient(
+    93.81deg,
+    rgba(255, 255, 255, 0.09) -2.44%,
+    rgba(255, 255, 255, 0.07) 136.47%
+  );
+  border-radius: 24px;
+  padding: 2rem;
 }
 
-.card:not(:first-child) {
-  margin-left: 2rem;
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
-.container .hScroll {
-  height: fit-content;
+.toolbar > h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.toolbar button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: none;
+}
+
+.top,
+.more {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(283px, 1fr));
+  gap: 5rem 2rem;
+}
+
+.more {
+  margin-top: 5rem;
 }
 
 .card {
@@ -23,7 +55,6 @@
   border-radius: 16px;
   position: relative;
   padding-top: 9rem;
-  width: 283px;
 }
 
 .card > img {

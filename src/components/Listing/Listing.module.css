@@ -1,0 +1,142 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.tabBar {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.tabBar button {
+  /* font-weight: 700;
+  font-size: 36px; */
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 49px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: none;
+}
+
+.tabBar button.active {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.viewAll {
+  /* padding: 1rem 1.5rem; */
+  padding: 12px 32px;
+  border-radius: 1.5rem;
+  width: fit-content;
+}
+
+.blockchainPicker {
+  display: flex;
+  align-items: stretch;
+  overflow-x: hidden;
+  width: fit-content;
+}
+
+.blockchainPicker input[type="radio"]:checked + label {
+  background-color: var(--color-secondary);
+}
+
+.blockchainPicker > label:nth-child(2) {
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.blockchainPicker > label {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.periodWrapper {
+  padding-inline: 1.5rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: #00000000;
+  border-radius: 1.5rem;
+}
+
+.period {
+  border: none;
+  background-color: #00000000;
+  border: none;
+  padding-block: 1rem;
+}
+
+.period:focus-visible {
+  outline: none;
+}
+
+.period,
+.viewAll {
+  width: fit-content;
+  background-color: #00000000;
+  white-space: nowrap;
+
+  /* font-weight: 600;
+  font-size: 20px;
+  */
+  font-size: 1rem;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.blockchainPicker {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.right > * {
+  border: 2px solid var(--color-secondary);
+  border-radius: 1.5rem;
+}
+
+.displayImage {
+  width: 80px;
+  height: 80px;
+}
+
+.collectionCell {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.collectionCell img {
+  margin-inline: 1rem;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.container table {
+  border-spacing: 2px 1.5rem;
+  height: fit-content;
+}
+
+.container .price,
+.container .volume {
+}

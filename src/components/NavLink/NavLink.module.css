@@ -6,7 +6,7 @@
   text-decoration: none;
   color: rgb(45, 45, 45);
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
 
   font-weight: 600;
   font-size: 20px;
