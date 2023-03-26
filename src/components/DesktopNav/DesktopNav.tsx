@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavLink from "../NavLink/NavLink";
 import Logo from "../Logo";
 import styles from "./DesktopNav.module.css";
 
@@ -9,24 +10,24 @@ export default function DesktopNav() {
       <Logo className={styles.logo} />
       <ul className={styles.navItems}>
         <li>
-          <Link className={styles.navItem} to="/">
+          <NavLink className={styles.navItem} to="/">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className={styles.navItem} to="/">
+          <NavLink className={styles.navItem} to="/">
             Explore
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className={styles.navItem} to="/">
+          <NavLink className={styles.navItem} to="/">
             Create
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className={styles.navItem} to="/">
+          <NavLink className={styles.navItem} to="/">
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <Link to="/" className={styles.cta}>

@@ -1,0 +1,83 @@
+.container {
+  margin-top: 3rem;
+}
+
+.card:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.container .hScroll {
+  height: fit-content;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  padding: 1rem;
+  background: linear-gradient(
+    93.81deg,
+    rgba(255, 255, 255, 0.07) -2.44%,
+    rgba(255, 255, 255, 0.06) 136.47%
+  );
+  border-radius: 16px;
+  position: relative;
+  padding-top: 9rem;
+  width: 283px;
+}
+
+.card > img {
+  position: absolute;
+  border-radius: 1rem;
+  width: 10.5rem;
+  aspect-ratio: 1/1;
+  top: -12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-inline: auto;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.card > button {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  margin-inline: auto;
+  border-radius: 16px;
+  border: 2px solid #00e6fe;
+  transition: all 300ms;
+  background-color: #00000000;
+  padding: 12px 32px;
+}
+
+.card > button:hover {
+  box-shadow: inset 2px 4px 2px rgba(255, 255, 255, 0.4);
+  background: #00e6fe;
+}
+
+.card .name,
+.card .price {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .name {
+  height: fit-content;
+  align-self: center;
+}
+
+.price {
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.price > img {
+  margin-right: 0.6rem;
+}

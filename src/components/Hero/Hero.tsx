@@ -14,11 +14,11 @@ export default function Hero() {
           NFT Marketplace brings together artists, creators and crypto
           enthusiasts on a single platform to create and explore top NFTs.
         </p>
-        <div className={styles.ctas}>
-          <Link to="" className={styles.ctaPrimary}>
+        <div className={styles.calls}>
+          <Link to="" className={styles.cta}>
             Explore
           </Link>
-          <Link to="" className={styles.ctaSecondary}>
+          <Link to="" className={styles.ghost}>
             Create NFT <FaArrowRight className={styles.icon} />
           </Link>
         </div>

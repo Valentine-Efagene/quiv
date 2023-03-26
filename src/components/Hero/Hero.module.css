@@ -31,14 +31,14 @@
   color: #ffffff;
 }
 
-.ctas {
+.calls {
   display: grid;
   grid-template-columns: auto auto;
   gap: 2rem;
   align-items: center;
 }
 
-.ctaPrimary {
+.cta {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -52,11 +52,11 @@
   transition: all 300ms;
 }
 
-.ctaPrimary:hover {
+.cta:hover {
   background-color: var(--color-secondary);
 }
 
-.ctaSecondary {
+.ghost {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -68,11 +68,11 @@
   align-items: center;
 }
 
-.ctaSecondary .icon {
+.ghost .icon {
   font-size: 1rem;
 }
 
-.ctaSecondary:hover .icon {
+.ghost:hover .icon {
   animation: var(--oscillation-animation);
 }
 
