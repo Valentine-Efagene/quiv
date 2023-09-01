@@ -85,6 +85,10 @@
   padding-block: 1rem;
 }
 
+.period option {
+  color: #000;
+}
+
 .period:focus-visible {
   outline: none;
 }
@@ -139,8 +143,4 @@
 .container table {
   border-spacing: 2px 1.5rem;
   height: fit-content;
-}
-
-.container .price,
-.container .volume {
 }
