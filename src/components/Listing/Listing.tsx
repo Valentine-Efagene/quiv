@@ -9,13 +9,13 @@ const TABLE_BREAK = 5;
 
 const collections = [
   {
-    img: "/lb1.svg",
+    img: "/lb1.png",
     name: "Mutant Ape Yacht Club",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/lb2.svg",
+    img: "/lb2.png",
     name: "Quirkies Originals",
     floor_price: 0,
     volume: 0,
@@ -27,25 +27,25 @@ const collections = [
     volume: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,

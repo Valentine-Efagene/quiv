@@ -9,43 +9,43 @@ interface INotableCollectionsProps {
 
 const collections = [
   {
-    img: "/nc1.svg",
+    img: "/nc1.png",
     name: "Mutant Ape Yacht Club",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc2.svg",
+    img: "/nc2.png",
     name: "Quirkies Originals",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc3.svg",
+    img: "/nc3.png",
     name: "Cool Punk Cats",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
     floor_price: 0,
     volume: 0,

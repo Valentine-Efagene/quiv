@@ -7,12 +7,12 @@ interface ILogoProps {
 
 const bids = [
   {
-    img: "/lb1.svg",
+    img: "/lb1.png",
     name: "Mutant Ape Yacht Club",
     price: 0,
   },
   {
-    img: "/lb2.svg",
+    img: "/lb2.png",
     name: "Quirkies Originals",
     price: 0,
   },
@@ -22,22 +22,22 @@ const bids = [
     price: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     price: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     price: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     price: 0,
   },
   {
-    img: "/lb4.svg",
+    img: "/lb4.png",
     name: "Happy Homies",
     price: 0,
   },

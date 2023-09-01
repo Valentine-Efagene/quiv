@@ -9,31 +9,31 @@ interface ICategoryPickerProps {
 
 const collections = [
   {
-    img: "/nc1.svg",
+    img: "/nc1.png",
     name: "Mutant Ape Yacht Club",
   },
   {
-    img: "/nc2.svg",
+    img: "/nc2.png",
     name: "Quirkies Originals",
   },
   {
-    img: "/nc3.svg",
+    img: "/nc3.png",
     name: "Cool Punk Cats",
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
   },
   {
-    img: "/nc4.svg",
+    img: "/nc4.png",
     name: "Happy Homies",
   },
 ];

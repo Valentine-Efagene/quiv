@@ -27,8 +27,8 @@ export default function Hero() {
         <div className={styles.info}>5k+ NFTs Stored</div>
         <div className={styles.info}>100% Authenticity</div>
         <div className={styles.info}>4000+ creators</div>
-        <img className={styles.ape1} src="/ape1.svg" alt="" />
-        <img className={styles.ape2} src="/ape2.svg" alt="" />
+        <img className={styles.ape1} src="/ape1.png" alt="" />
+        <img className={styles.ape2} src="/ape2.png" alt="" />
       </div>
     </div>
   );
