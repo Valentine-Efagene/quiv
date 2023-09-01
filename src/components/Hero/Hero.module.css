@@ -81,6 +81,11 @@
   position: relative;
 }
 
+.ape1:hover,
+.ape2:hover {
+  transform: scale(1.1);
+}
+
 .ape1 {
   position: absolute;
   left: 1rem;

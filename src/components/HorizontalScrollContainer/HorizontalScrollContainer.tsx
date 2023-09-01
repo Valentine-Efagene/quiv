@@ -11,11 +11,13 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import useElementOnScreen from "../../hooks/useElementOnScreen";
 
 interface IHorizontalScrollContainerProps {
   children?: ReactNode;
   className?: string;
-  padderClassName?: string;
+  scrollerClassName?: string;
+  overflowContainerClassName?: string;
   style?: object;
   shouldTransformScroll?: boolean;
 }
@@ -24,23 +26,32 @@ export default function HorizontalScrollContainer({
   children,
   className,
   style,
-  padderClassName,
+  overflowContainerClassName,
+  scrollerClassName,
   shouldTransformScroll = false,
 }: IHorizontalScrollContainerProps) {
   const leftButtonRef = useRef<HTMLButtonElement>();
-  const containerRef = useRef<HTMLDivElement>();
   const rightButtonRef = useRef<HTMLButtonElement>();
 
   const [canGoLeft, setCanGoLeft] = useState(false);
   const [canGoRight, setCanGoRight] = useState(false);
 
-  const handleScroll = (e: Event) => {
+  const [containerRef, isVisible] = useElementOnScreen({
+    threshold: 0.1,
+  });
+
+  const checkScroll = (e: Event) => {
     setCanGoLeft(canScrollLeft(e.currentTarget as HTMLDivElement));
     setCanGoRight(canScrollRight(e.currentTarget as HTMLDivElement));
   };
 
+  const checkScrollofElement = (e: HTMLDivElement) => {
+    setCanGoLeft(canScrollLeft(e));
+    setCanGoRight(canScrollRight(e));
+  };
+
   useEffect(() => {
-    containerRef?.current?.addEventListener("scroll", handleScroll);
+    containerRef?.current?.addEventListener("scroll", checkScroll);
 
     if (shouldTransformScroll) {
       // Using the element's onWheel has glitches
@@ -48,14 +59,18 @@ export default function HorizontalScrollContainer({
     }
 
     return () => {
-      containerRef?.current?.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
+      containerRef?.current?.removeEventListener("scroll", checkScroll);
+      window.removeEventListener("resize", checkScroll);
 
       if (shouldTransformScroll) {
         containerRef?.current?.removeEventListener("wheel", transformScroll);
       }
     };
   }, []);
+
+  useEffect(() => {
+    checkScrollofElement(containerRef?.current as HTMLDivElement);
+  }, [isVisible]);
 
   const goLeft = () => {
     if (containerRef == null) return;
@@ -81,10 +96,14 @@ export default function HorizontalScrollContainer({
       </button>
 
       <div
-        className={`${padderClassName} ${styles.padder}`}
+        className={`${scrollerClassName} ${styles.scroller}`}
         ref={containerRef as RefObject<HTMLDivElement>}
       >
-        <div className={styles.overflowContainer}>{children}</div>
+        <div
+          className={`${overflowContainerClassName} ${styles.overflowContainer}`}
+        >
+          {children}
+        </div>
       </div>
       <button
         ref={rightButtonRef as RefObject<HTMLButtonElement>}

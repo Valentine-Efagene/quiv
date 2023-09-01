@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaAccessibleIcon, FaDigitalOcean, FaEthereum } from "react-icons/fa";
 import styles from "./Listing.module.css";
 
 interface IListingProps {
@@ -76,12 +75,12 @@ export default function Listing({ className }: IListingProps) {
           </button>
         </div>
         <div className={styles.right}>
-          <div className={styles.periodWrapper}>
+          <label className={styles.periodWrapper}>
             <select className={styles.period} name="period" id="period">
               <option value="24_hours">24 hours</option>
               <option value="2_days">2 days</option>
             </select>
-          </div>
+          </label>
           <div className={styles.blockchainPicker}>
             <input
               hidden
@@ -99,7 +98,7 @@ export default function Listing({ className }: IListingProps) {
               value="ethereum"
             />
             <label htmlFor="ethereum">
-              <FaEthereum />
+              <img alt="" src="/ethereum_white.svg" />
             </label>
             <input
               hidden
@@ -109,15 +108,15 @@ export default function Listing({ className }: IListingProps) {
               value="solana"
             />
             <label htmlFor="solana">
-              <FaEthereum />
+              <img src="/helmet.svg" alt="" />
             </label>
             <input hidden type="radio" name="chain" id="usdt" value="usdt" />
             <label htmlFor="usdt">
-              <FaDigitalOcean />
+              <img src="/block.svg" alt="" />
             </label>
             <input hidden type="radio" name="chain" id="doge" value="doge" />
             <label htmlFor="doge">
-              <FaAccessibleIcon />
+              <img src="/inf.svg" alt="" />
             </label>
           </div>
           <button className={styles.viewAll}>View All</button>

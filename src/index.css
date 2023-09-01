@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   --max-width: 1280px;
+  --inner-max-width: 1100px;
   --color-secondary: #00e6fe;
 
   color-scheme: light dark;
@@ -15,6 +16,10 @@
   -webkit-text-size-adjust: 100%;
 
   --oscillation-animation: oscillation 1s ease-in-out;
+}
+
+button {
+  cursor: pointer;
 }
 
 @keyframes oscillation {
@@ -43,7 +48,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
   }
 }

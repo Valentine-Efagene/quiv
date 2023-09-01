@@ -1,7 +1,9 @@
 .container {
+  padding-inline: 2rem;
   scrollbar-color: #00000000 #00000000;
   display: flex;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container ::-webkit-scrollbar {
@@ -19,17 +21,16 @@
 }
 
 .container ::-webkit-scrollbar-thumb:hover {
-  background-color: #737394;
+  background-color: #00000000;
 }
 
 .container * {
   scrollbar-color: #00000000 #00000000;
 }
 
-.padder {
+.scroller {
   display: flex;
   overflow-x: auto;
-  padding-inline: 2rem;
 }
 
 .overflowContainer {
@@ -41,7 +42,7 @@
   align-self: center;
   border-radius: 50%;
   background-color: #00000068;
-  border: 1px solid #cbcbcb;
+  border: 2px solid #a5a5a5;
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -49,33 +50,39 @@
   align-items: center;
   padding: 1rem;
   position: absolute;
+  cursor: pointer;
+  color: white;
+}
+
+.move:hover {
+  border: 2px solid #ffffff;
 }
 
 .move:disabled {
   background-color: #00000016;
   border: 1px solid #cbcbcb1c;
+  color: #cbcbcb1c;
 }
 
 .chevron {
   width: 1rem;
   height: 1rem;
-  color: white;
 }
 
 .left {
-  left: -1.5rem;
+  left: 0;
 }
 
 .right {
-  right: -1.5rem;
+  right: 0;
 }
 
-.container::-webkit-scrollbar {
+.container ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-.container::-webkit-scrollbar-track {
+.container ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 

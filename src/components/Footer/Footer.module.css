@@ -60,6 +60,12 @@
   flex: 1;
 }
 
+.top,
+.bottom {
+  width: min(100%, var(--inner-max-width));
+  margin-inline: auto;
+}
+
 .conversion .submit {
   cursor: pointer;
   padding-inline: 1rem;
